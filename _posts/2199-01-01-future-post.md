@@ -1,6 +1,6 @@
 ---
-title: 'Future Blog Post'
-date: 2199-01-01
+title: '基于点云刚性配准的Delta机器人参数标定'
+date: 2024-01-19
 permalink: /posts/2012/08/blog-post-4/
 tags:
   - cool posts
