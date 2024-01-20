@@ -10,8 +10,6 @@ tags:
 
 本文主要针对delta机器人的DH参数标定进行系统分析以及模型推导，阐述基于点云刚性配准的标定策略。 
 
-\alpha+\beta
-
-This post will show up by default. To disable scheduling of future posts, edit `config.yml` and set `future: false`.
+$\alpha$+$\beta$
 
 
