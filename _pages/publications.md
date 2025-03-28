@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: default
 title: "已发表论文"
 author_profile: true
 ---
