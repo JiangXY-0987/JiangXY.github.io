@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Jiannan Liu 刘剑楠"
+title: "欢迎访问口腔肿瘤智能诊疗实验室"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
