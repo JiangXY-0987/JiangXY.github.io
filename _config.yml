@@ -7,9 +7,9 @@
 
 # Site Settings
 locale                   : "USA"
-title                    : "Evil Phycho"
+title                    : "TIGER Lab @ SJTUSM"
 title_separator          : "-"
-name                     : &name "Xiaoyan Jiang"
+name                     : &name "口腔肿瘤智能诊疗实验室"
 description              : &description "personal description"
 url                      : https://jiangxy-0987.github.io/JiangXY.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -80,13 +80,13 @@ analytics:
 
 # Site Author
 author:
-  name             : "Xiaoyan Jiang"
+  name             : "口腔肿瘤智能诊疗实验室"
   avatar           : "profile.png"
-  bio              : "闷声发大财"
-  location         : "Shanghai/China"
+  bio              : "上海交通大学医学院附属第九人民医院&口腔医学院"
+  location         : "上海/中国"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
+ # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+ # googlescholar    : "http://yourfullgooglescholarurl.com"
   email            : "xyjiang44@gmail.com"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
@@ -96,20 +96,20 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+ # github           : "academicpages"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+ # orcid            : "http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  #twitter          : "replacethistwitterhandle"
   vine             :
   weibo            :
   xing             :
