@@ -47,7 +47,7 @@ redirect_from:
 </style>
 
 # TIGER Lab  
-### * **T**ranslational **I**nnovation in **G**enomics, **E**ngineering, and **R**obotics for Oral Cancer*
+**T**ranslational **I**nnovation in **G**enomics, **E**ngineering, and **R**obotics for Oral Cancer
 **口腔肿瘤智能诊疗转化创新实验室**
 
 ---
