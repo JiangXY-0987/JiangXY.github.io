@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "欢迎访问口腔肿瘤智能诊疗实验室"
+title: "欢迎访问口腔肿瘤智能诊疗实验室(TIGER Lab)"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
