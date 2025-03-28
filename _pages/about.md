@@ -47,7 +47,7 @@ redirect_from:
 </style>
 
 # TIGER Lab  
-### *Translational Innovation in Genomics, Engineering, and Robotics for Oral Cancer*  
+### ### *<strong style="color:#1f5fa0;">T</strong>ranslational <strong style="color:#1f5fa0;">I</strong>nnovation in <strong style="color:#1f5fa0;">G</strong>enomics, <strong style="color:#1f5fa0;">E</strong>ngineering, and <strong style="color:#1f5fa0;">R</strong>obotics for Oral Cancer*
 **口腔肿瘤智能诊疗转化创新实验室**
 
 ---
@@ -74,7 +74,7 @@ TIGER Lab 聚焦于**口腔颌面部肿瘤的智能诊断与外科重建技术**
 
 ## 关于 PI
 
-> **刘剑楠**，主任医师、研究员、博士生导师，上海交通大学医学院附属第九人民医院口腔颌面头颈肿瘤科副主任、上海交通大学口腔医学院副院长。
+> **刘剑楠**，主任医师、研究员、博士生导师，上海交通大学口腔医学院副院长、上海交通大学医学院附属第九人民医院口腔颌面头颈肿瘤科主任医师。
 
 刘教授入选：
 
@@ -99,7 +99,7 @@ TIGER Lab 聚焦于**口腔颌面部肿瘤的智能诊断与外科重建技术**
 - 全国颠覆性技术大赛优胜奖（第一）  
 - 中华口腔医学科技奖二等奖  
 - 上海医学科技奖二等奖  
-- 银蛇奖二等奖  
+- 上海市卫健委银蛇奖二等奖  
 - 上海优秀发明选拔赛金奖（第一）  
 - 黄浦区十大杰出青年等荣誉
 
