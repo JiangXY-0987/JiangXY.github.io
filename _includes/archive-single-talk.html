@@ -1,10 +1,10 @@
-<div class="person-box" style="display: flex; align-items: center; margin-bottom: 2em;">
+<div class="person-box" style="display: flex; align-items: center; margin-bottom: 2em; border-bottom: 1px solid #ddd; padding-bottom: 15px;">
   <div class="photo" style="flex: 0 0 150px;">
     <img src="{{ post.photo }}" alt="{{ post.title }}" style="width: 150px; height: auto; border-radius: 10px;">
   </div>
-  <div class="info" style="margin-left: 20px;">
-    <h3 style="margin-top: 0;">{{ post.title }}</h3>
-    <p><strong>{{ post.position }}</strong></p>
-    <p>{{ post.description }}</p>
+  <div class="info" style="margin-left: 20px; flex-grow: 1;">
+    <h3 style="margin-top: 0; color: #34495e;">{{ post.title }}</h3>
+    <p><strong style="color: #3498db;">{{ post.position }}</strong></p>
+    <p style="font-size: 16px;">{{ post.description }}</p>
   </div>
 </div>
