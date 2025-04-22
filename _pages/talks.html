@@ -5,12 +5,35 @@ permalink: /talks/
 author_profile: true
 ---
 
-{% if site.talkmap_link == true %}
+<h2>老师</h2>
+{% assign teachers = site.talks | where: "category", "老师" %}
+{% for post in teachers %}
+  <div class="person-box" style="display: flex; align-items: center; margin-bottom: 2em;">
+    <div class="photo" style="flex: 0 0 150px;">
+      <img src="{{ post.photo }}" alt="{{ post.title }}" style="width: 150px; height: auto; border-radius: 10px;">
+    </div>
+    <div class="info" style="margin-left: 20px;">
+      <h3 style="margin-top: 0;">{{ post.title }}</h3>
+      <p><strong>{{ post.position }}</strong></p>
+      <p>{{ post.description }}</p>
+    </div>
+  </div>
+{% endfor %}
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+<h2>博士后</h2>
+{% assign postdocs = site.talks | where: "category", "博士后" %}
+{% for post in postdocs %}
+  <!-- 同上结构 -->
+{% endfor %}
 
-{% endif %}
+<h2>博士</h2>
+{% assign phd = site.talks | where: "category", "博士" %}
+{% for post in phd %}
+  <!-- 同上结构 -->
+{% endfor %}
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
+<h2>硕士</h2>
+{% assign master = site.talks | where: "category", "硕士" %}
+{% for post in master %}
+  <!-- 同上结构 -->
 {% endfor %}
