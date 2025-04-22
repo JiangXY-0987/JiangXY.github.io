@@ -1,16 +1,17 @@
 ---
 layout: archive
-title: "科研项目"
-permalink: /portfolio/
+title: "团队成员"
+permalink: /talks/
 author_profile: true
 ---
 
-{% include base_path %}
+{% if site.talkmap_link == true %}
 
+<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
 
+{% endif %}
 
-
-{% comment %}{% for post in site.portfolio %}{% endcomment %}
-  {% comment %}{% include archive-single.html %}{% endcomment %}
+{% for post in site.talks reversed %}
+  {% include archive-single-talk.html %}
 {% endfor %}
 
