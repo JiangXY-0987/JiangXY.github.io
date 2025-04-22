@@ -1,15 +1,9 @@
 ---
-title: "Paper Title Number 1"
+title: "A Study on Surgical Robotics"
 collection: publications
-permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+permalink: /publication/robotics2024
+authors: Liu J., Wang H., Zhang X.
+year: 2024
+journal: IEEE Trans. on Medical Robotics
+pdf: /files/publications/robotics2024.pdf
 ---
-This paper is about the number 1. The number 2 is left for future work.
-
-[Download paper here](http://academicpages.github.io/files/paper1.pdf)
-
-Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1).
