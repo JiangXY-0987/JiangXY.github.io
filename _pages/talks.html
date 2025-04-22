@@ -36,7 +36,7 @@ author_profile: true
 <!-- 博士类别 -->
 <div class="team-category">
   <h2 style="color: #9b59b6; border-bottom: 2px solid #3498db; padding-bottom: 5px;">博士</h2>
-  <div class="team-list">
+  <div class="team-list" style="display: flex; flex-wrap: wrap; gap: 30px;">
     {% for post in site.talks %}
       {% if post.position == "博士" %}
         {% include archive-singleMember.html %}
@@ -48,7 +48,7 @@ author_profile: true
 <!-- 硕士类别 -->
 <div class="team-category">
   <h2 style="color: #9b59b6; border-bottom: 2px solid #3498db; padding-bottom: 5px;">硕士</h2>
-  <div class="team-list">
+  <div class="team-list" style="display: flex; flex-wrap: wrap; gap: 30px;">
     {% for post in site.talks %}
       {% if post.position == "硕士" %}
         {% include archive-singleMember.html %}
