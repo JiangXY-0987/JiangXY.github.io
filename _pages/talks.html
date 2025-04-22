@@ -1,39 +1,53 @@
----
-layout: archive
-title: "团队成员"
-permalink: /talks/
-author_profile: true
----
-
-<h2>老师</h2>
-{% assign teachers = site.talks | where: "category", "老师" %}
-{% for post in teachers %}
-  <div class="person-box" style="display: flex; align-items: center; margin-bottom: 2em;">
-    <div class="photo" style="flex: 0 0 150px;">
-      <img src="{{ post.photo }}" alt="{{ post.title }}" style="width: 150px; height: auto; border-radius: 10px;">
+<div class="team-category">
+  <h2>老师</h2>
+  {% for post in site.talks %}
+    {% if post.category == "老师" %}
+    <div class="person-box" style="display: flex; align-items: center; margin-bottom: 2em;">
+      <div class="photo" style="flex: 0 0 150px;">
+        <img src="{{ post.photo }}" alt="{{ post.title }}" style="width: 150px; height: auto; border-radius: 10px;">
+      </div>
+      <div class="info" style="margin-left: 20px;">
+        <h3 style="margin-top: 0;">{{ post.title }}</h3>
+        <p><strong>{{ post.position }}</strong></p>
+        <p>{{ post.description }}</p>
+      </div>
     </div>
-    <div class="info" style="margin-left: 20px;">
-      <h3 style="margin-top: 0;">{{ post.title }}</h3>
-      <p><strong>{{ post.position }}</strong></p>
-      <p>{{ post.description }}</p>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<div class="team-category">
+  <h2>博士后</h2>
+  {% for post in site.talks %}
+    {% if post.category == "博士后" %}
+    <div class="person-box" style="display: flex; align-items: center; margin-bottom: 2em;">
+      <div class="photo" style="flex: 0 0 150px;">
+        <img src="{{ post.photo }}" alt="{{ post.title }}" style="width: 150px; height: auto; border-radius: 10px;">
+      </div>
+      <div class="info" style="margin-left: 20px;">
+        <h3 style="margin-top: 0;">{{ post.title }}</h3>
+        <p><strong>{{ post.position }}</strong></p>
+        <p>{{ post.description }}</p>
+      </div>
     </div>
-  </div>
-{% endfor %}
+    {% endif %}
+  {% endfor %}
+</div>
 
-<h2>博士后</h2>
-{% assign postdocs = site.talks | where: "category", "博士后" %}
-{% for post in postdocs %}
-  <!-- 同上结构 -->
-{% endfor %}
-
-<h2>博士</h2>
-{% assign phd = site.talks | where: "category", "博士" %}
-{% for post in phd %}
-  <!-- 同上结构 -->
-{% endfor %}
-
-<h2>硕士</h2>
-{% assign master = site.talks | where: "category", "硕士" %}
-{% for post in master %}
-  <!-- 同上结构 -->
-{% endfor %}
+<div class="team-category">
+  <h2>博士</h2>
+  {% for post in site.talks %}
+    {% if post.category == "博士" %}
+    <div class="person-box" style="display: flex; align-items: center; margin-bottom: 2em;">
+      <div class="photo" style="flex: 0 0 150px;">
+        <img src="{{ post.photo }}" alt="{{ post.title }}" style="width: 150px; height: auto; border-radius: 10px;">
+      </div>
+      <div class="info" style="margin-left: 20px;">
+        <h3 style="margin-top: 0;">{{ post.title }}</h3>
+        <p><strong>{{ post.position }}</strong></p>
+        <p>{{ post.description }}</p>
+      </div>
+    </div>
+    {% endif %}
+  {% endfor %}
+</div>
