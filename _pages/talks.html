@@ -1,51 +1,16 @@
 ---
-layout: default
+layout: archive
 title: "团队成员"
 permalink: /talks/
+author_profile: true
 ---
 
-<h1>团队成员</h1>
+{% if site.talkmap_link == true %}
 
-<div class="team-category">
-  <h2>老师</h2>
-  <div class="team-list">
-    {% for post in site.talks %}
-      {% if post.category == "老师" %}
-        {% include single_talk.html %}
-      {% endif %}
-    {% endfor %}
-  </div>
-</div>
+<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
 
-<div class="team-category">
-  <h2>博士后</h2>
-  <div class="team-list">
-    {% for post in site.talks %}
-      {% if post.category == "博士后" %}
-        {% include single_talk.html %}
-      {% endif %}
-    {% endfor %}
-  </div>
-</div>
+{% endif %}
 
-<div class="team-category">
-  <h2>博士</h2>
-  <div class="team-list">
-    {% for post in site.talks %}
-      {% if post.category == "博士" %}
-        {% include single_talk.html %}
-      {% endif %}
-    {% endfor %}
-  </div>
-</div>
-
-<div class="team-category">
-  <h2>硕士</h2>
-  <div class="team-list">
-    {% for post in site.talks %}
-      {% if post.category == "硕士" %}
-        {% include single_talk.html %}
-      {% endif %}
-    {% endfor %}
-  </div>
-</div>
+{% for post in site.talks reversed %}
+  {% include archive-single-talk.html %}
+{% endfor %}
