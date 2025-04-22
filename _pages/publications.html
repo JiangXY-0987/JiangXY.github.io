@@ -1,37 +1,37 @@
 ---
 layout: archive
-title: "论文成果"
+title: "已发表论文"
 permalink: /publications/
-author_profile: false
+author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
-{% include base_path %}
 <div style="max-width: 900px; margin: 0 auto; padding: 20px;">
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
+  {% if site.author.googlescholar %}
+    <div class="wordwrap">
+      You can also find my articles on
+      <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.
+    </div>
+  {% endif %}
+
+  {% include base_path %}
+
+  {% if site.publication_category %}
+    {% for category in site.publication_category  %}
+      {% assign title_shown = false %}
+      {% for post in site.publications reversed %}
+        {% if post.category != category[0] %}
+          {% continue %}
+        {% endif %}
+        {% unless title_shown %}
+          <h2 style="color: #2980b9; border-bottom: 2px solid #3498db; padding-bottom: 5px;">{{ category[1].title }}</h2>
+          {% assign title_shown = true %}
+        {% endunless %}
+        {% include archive-single.html %}
+      {% endfor %}
+    {% endfor %}
+  {% else %}
     {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
       {% include archive-single.html %}
     {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-  </div>
-
-
-
+  {% endif %}
+</div>
