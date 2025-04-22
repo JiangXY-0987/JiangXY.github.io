@@ -1,53 +1,51 @@
+---
+layout: default
+title: "团队成员"
+permalink: /talks/
+---
+
+<h1>团队成员</h1>
+
 <div class="team-category">
   <h2>老师</h2>
-  {% for post in site.talks %}
-    {% if post.category == "老师" %}
-    <div class="person-box" style="display: flex; align-items: center; margin-bottom: 2em;">
-      <div class="photo" style="flex: 0 0 150px;">
-        <img src="{{ post.photo }}" alt="{{ post.title }}" style="width: 150px; height: auto; border-radius: 10px;">
-      </div>
-      <div class="info" style="margin-left: 20px;">
-        <h3 style="margin-top: 0;">{{ post.title }}</h3>
-        <p><strong>{{ post.position }}</strong></p>
-        <p>{{ post.description }}</p>
-      </div>
-    </div>
-    {% endif %}
-  {% endfor %}
+  <div class="team-list">
+    {% for post in site.talks %}
+      {% if post.category == "老师" %}
+        {% include single_talk.html %}
+      {% endif %}
+    {% endfor %}
+  </div>
 </div>
 
 <div class="team-category">
   <h2>博士后</h2>
-  {% for post in site.talks %}
-    {% if post.category == "博士后" %}
-    <div class="person-box" style="display: flex; align-items: center; margin-bottom: 2em;">
-      <div class="photo" style="flex: 0 0 150px;">
-        <img src="{{ post.photo }}" alt="{{ post.title }}" style="width: 150px; height: auto; border-radius: 10px;">
-      </div>
-      <div class="info" style="margin-left: 20px;">
-        <h3 style="margin-top: 0;">{{ post.title }}</h3>
-        <p><strong>{{ post.position }}</strong></p>
-        <p>{{ post.description }}</p>
-      </div>
-    </div>
-    {% endif %}
-  {% endfor %}
+  <div class="team-list">
+    {% for post in site.talks %}
+      {% if post.category == "博士后" %}
+        {% include single_talk.html %}
+      {% endif %}
+    {% endfor %}
+  </div>
 </div>
 
 <div class="team-category">
   <h2>博士</h2>
-  {% for post in site.talks %}
-    {% if post.category == "博士" %}
-    <div class="person-box" style="display: flex; align-items: center; margin-bottom: 2em;">
-      <div class="photo" style="flex: 0 0 150px;">
-        <img src="{{ post.photo }}" alt="{{ post.title }}" style="width: 150px; height: auto; border-radius: 10px;">
-      </div>
-      <div class="info" style="margin-left: 20px;">
-        <h3 style="margin-top: 0;">{{ post.title }}</h3>
-        <p><strong>{{ post.position }}</strong></p>
-        <p>{{ post.description }}</p>
-      </div>
-    </div>
-    {% endif %}
-  {% endfor %}
+  <div class="team-list">
+    {% for post in site.talks %}
+      {% if post.category == "博士" %}
+        {% include single_talk.html %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+<div class="team-category">
+  <h2>硕士</h2>
+  <div class="team-list">
+    {% for post in site.talks %}
+      {% if post.category == "硕士" %}
+        {% include single_talk.html %}
+      {% endif %}
+    {% endfor %}
+  </div>
 </div>
