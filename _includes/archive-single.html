@@ -1,9 +1,15 @@
-<div class="pub-item" style="margin-bottom: 20px; line-height: 1.6;">
-  <p style="font-size: 16px;">
-    <strong>{{ post.title }}</strong><br/>
-    {{ post.authors }}<br/>
-    <em>{{ post.journal }}</em>, {{ post.year }}.  
+<div class="pub-item" style="margin: 15px 0; display: flex; align-items: flex-start;">
+  <div style="width: 20px; text-align: center; font-size: 20px; color: #3498db;">•</div>
+  <div style="flex-grow: 1; line-height: 1.6;">
+    <span style="font-size: 16px;">
+      {{ post.authors }}.
+      <strong>{{ post.title }}</strong>.
+      <em>{{ post.journal }}</em>,
+      {{ post.year }}.
+    </span>
     {% if post.pdf %} <a href="{{ post.pdf }}" target="_blank">[PDF]</a>{% endif %}
     {% if post.code %} <a href="{{ post.code }}" target="_blank">[Code]</a>{% endif %}
-  </p>
+    {% if post.doi %} <a href="{{ post.doi }}" target="_blank">[DOI]</a>{% endif %}
+  </div>
 </div>
+
