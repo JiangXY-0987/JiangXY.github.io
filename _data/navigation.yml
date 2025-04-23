@@ -4,19 +4,19 @@ main:
     url: /publications/
 
   - title: "团队成员"
-    url: /talks/    
+    url: /team/    
 
   - title: "研究成果"
-    url: /teaching/    
+    url: /research/    
     
   - title: "科研项目"
-    url: /portfolio/
+    url: /project/
         
   - title: "团队动态"
-    url: /year-archive/
+    url: /state/
     
   - title: "联系方式"
-    url: /cv/
+    url: /contact/
     
   - title: "English"
     url: /markdown/
