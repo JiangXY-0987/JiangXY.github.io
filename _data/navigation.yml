@@ -16,7 +16,7 @@ main:
     url: /state/
     
   - title: "联系方式"
-    url: /talkmap/
+    url: /portfolio/
     
   - title: "English"
     url: /markdown/
