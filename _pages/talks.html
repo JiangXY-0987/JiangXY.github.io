@@ -59,7 +59,6 @@ author_profile: true
 <!-- 硕士类别 -->
 <div class="team-category">
   <h2 style="color: #f39c12; border-bottom: 2px solid #3498db; padding-bottom: 5px;">硕士</h2>
-  <--div class="team-list" style="display: flex; flex-wrap: wrap; gap: 30px;"-->
   <div class="team-list" style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
     {% assign sorted_masters = site.talks | where: "position", "硕士" | sort: "order" %}
     {% for post in sorted_masters %}
