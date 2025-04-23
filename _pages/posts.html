@@ -1,36 +1,49 @@
 ---
 layout: default
-title: "研究成果"
 permalink: /posts/
-author_profile: false
+title: "研究成果"
+author_profile: true
 ---
 
-<!DOCTYPE html>
-<html lang="zh">
-<head>
-  <meta charset="UTF-8">
-  <title>研究成果</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<div style="max-width: 1000px; margin: 0 auto;">
+  <h1 style="font-size: 45px; color: #2c3e50; margin-bottom: 50px;">研究成果</h1>
 
-  <!-- 页面主内容 -->
-  <div style="max-width: 1000px; margin: 0 auto; padding: 40px;">
-    <h1 style="font-size: 45px; color: #2c3e50; margin-bottom: 50px;">研究成果</h1>
-
-    <!-- 成果分类 -->
-    <div class="achievement-category">
-      <h2 style="color: #e67e22; border-bottom: 2px solid #3498db; padding-bottom: 8px;">核心成果</h2>
-      <div class="achievement-list">
-        {% for post in site.posts %}
-          {% if post.category == "research" %}
-            {% include archive-singleResearch.html %}
-          {% endif %}
-        {% endfor %}
-      </div>
+  <!-- 成果1：颌骨重建智能张口器 -->
+  <div style="display: flex; flex-wrap: wrap; margin-bottom: 50px;">
+    <div style="flex: 1; min-width: 300px;">
+      <img src="https://jiangxy-0987.github.io/JiangXY.github.io/images/zkq.png" alt="颌骨重建智能张口器" style="width: 100%; border-radius: 10px;" />
+    </div>
+    <div style="flex: 2; padding-left: 30px; min-width: 300px;">
+      <h2 style="color: #34495e;">颌骨重建智能张口器</h2>
+      <p style="font-size: 18px; line-height: 1.8;">
+        本项目旨在开发一款用于下颌骨重建术前训练与术中协助定位的智能张口器，具有张口范围可调、感知反馈、蓝牙控制等特点，现已完成初代产品开发并进入临床测试阶段。
+      </p>
     </div>
   </div>
 
-  <!-- 页脚 -->
-  {% include footer.html %}
+  <!-- 成果2：颌骨重建手术机器人 -->
+  <div style="display: flex; flex-wrap: wrap; margin-bottom: 50px;">
+    <div style="flex: 1; min-width: 300px;">
+      <img src="/images/robot1.jpg" alt="颌骨重建手术机器人" style="width: 100%; border-radius: 10px;" />
+    </div>
+    <div style="flex: 2; padding-left: 30px; min-width: 300px;">
+      <h2 style="color: #34495e;">颌骨重建手术机器人</h2>
+      <p style="font-size: 18px; line-height: 1.8;">
+        本研究致力于开发一套用于颌骨精确截骨与重建的手术机器人系统，具备图像导航、力觉反馈和高精度控制等功能，目标是提高手术安全性与重建准确性。
+      </p>
+    </div>
+  </div>
 
-</body>
-</html>
+  <!-- 成果3：呼出气检测 -->
+  <div style="display: flex; flex-wrap: wrap; margin-bottom: 50px;">
+    <div style="flex: 1; min-width: 300px;">
+      <img src="/images/breath.jpg" alt="呼出气检测" style="width: 100%; border-radius: 10px;" />
+    </div>
+    <div style="flex: 2; padding-left: 30px; min-width: 300px;">
+      <h2 style="color: #34495e;">呼出气检测</h2>
+      <p style="font-size: 18px; line-height: 1.8;">
+        项目开发了一种基于MEMS传感器的呼出气检测设备，可实时监测呼吸气体中的关键成分，用于术后康复监测及早期疾病筛查，具有便携、无创、响应快等特点。
+      </p>
+    </div>
+  </div>
+</div> 
