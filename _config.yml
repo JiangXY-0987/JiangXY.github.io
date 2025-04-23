@@ -188,6 +188,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  posts:
+  output: true
+  permalink: /:collection/:path/
 
 
 # Defaults
@@ -199,10 +202,10 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: true
+      #read_time: true
+      #comments: true
       share: true
-      related: true
+      #related: true
   # _pages
   - scope:
       path: ""
