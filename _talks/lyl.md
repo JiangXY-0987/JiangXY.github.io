@@ -6,5 +6,5 @@ category: "硕士"
 order: 1
 description: "入学时间：2023年7月<br>
               研究方向：CT图像金属伪影消除<br>
-              邮箱：   XXXXXXXX"
+              邮箱：123718910174@sjtu.edu.cn"
 ---
