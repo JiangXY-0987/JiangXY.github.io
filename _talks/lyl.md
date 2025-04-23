@@ -5,6 +5,6 @@ position: "硕士"
 category: "硕士"
 order: 1
 description: "入学时间：2023年7月<br>
-              研究方向：XXXXXX<br>
+              研究方向：CT图像伪影消除<br>
               邮箱：   XXXXXXXX"
 ---
