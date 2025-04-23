@@ -25,7 +25,7 @@ author_profile: true
   <div class="team-list">
     {% for post in site.talks %}
       {% if post.position == "教职工" %}
-        {% include archive-single-talk.html %}
+        {% include archive-singleMember.html %}
       {% endif %}
     {% endfor %}
   </div>
@@ -50,7 +50,7 @@ author_profile: true
   <div class="team-list" style="display: flex; flex-wrap: wrap; gap: 30px;">
     {% for post in site.talks %}
       {% if post.position == "博士" %}
-        {% include archive-singleMember.html %}
+        {% include archive-single-talk.html %}
       {% endif %}
     {% endfor %}
   </div>
