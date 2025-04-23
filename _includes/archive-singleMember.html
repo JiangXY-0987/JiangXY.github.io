@@ -1,10 +1,15 @@
-<div class="person-box" style="display: flex; align-items: center; width: 50%; min-width: 350px;">
+<div class="person-box" style="display: flex; align-items: center; margin-bottom: 2em; border-bottom: 1px solid #ddd; padding-bottom: 15px;">
   <div class="photo" style="flex: 0 0 150px;">
     <img src="{{ post.photo }}" alt="{{ post.title }}" style="width: 150px; height: auto; border-radius: 10px;">
   </div>
   <div class="info" style="margin-left: 20px; flex-grow: 1;">
-    <h3 style="margin-top: 0; color: #34495e;">{{ post.title }}</h3>
-    <p><strong style="color: #3498db;">{{ post.position }}</strong></p>
+    <!-- 名字加大加粗 -->
+    <h2 style="margin-top: 0; color: #34495e; font-size: 24px; font-weight: bold;">{{ post.title }}</h2>
+    
+    <!-- 去掉职位 -->
+    
+    <!-- 描述保持原样 -->
     <p style="font-size: 16px;">{{ post.description }}</p>
   </div>
 </div>
+
