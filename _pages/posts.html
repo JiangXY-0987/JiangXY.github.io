@@ -6,45 +6,91 @@ author_profile: true
 ---
 
 <div style="max-width: 1000px; margin: 0 auto;">
-  <h1 style="font-size: 45px; color: #2c3e50; margin-bottom: 50px;">研究成果</h1>
+  <h1 style="font-size: 45px; color: #2c3e50; margin-bottom: 60px; text-align: center;">研究成果</h1>
 
-  <!-- 成果1：颌骨重建智能张口器 -->
-  <div style="display: flex; flex-wrap: wrap; margin-bottom: 50px;">
-    <div style="flex: 1; min-width: 300px;">
-      <img src="https://jiangxy-0987.github.io/JiangXY.github.io/images/zkq.png" alt="颌骨重建智能张口器" style="width: 100%; border-radius: 10px;" />
+  <!-- 公共CSS样式（可放入<head>中或style标签内） -->
+  <style>
+    .research-card {
+      display: flex;
+      flex-wrap: wrap;
+      background-color: #f9f9f9;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-bottom: 50px;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+      padding: 25px;
+    }
+    .research-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+    .research-image {
+      flex: 1;
+      min-width: 280px;
+    }
+    .research-image img {
+      width: 100%;
+      max-height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+    .research-text {
+      flex: 2;
+      padding-left: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-width: 280px;
+    }
+    .research-text h2 {
+      color: #2c3e50;
+      margin-top: 0;
+    }
+    .research-text p {
+      font-size: 17px;
+      line-height: 1.7;
+      margin: 10px 0 0 0;
+      color: #444;
+    }
+  </style>
+
+  <!-- 成果1 -->
+  <div class="research-card">
+    <div class="research-image">
+      <img src="https://jiangxy-0987.github.io/JiangXY.github.io/images/zkq.png" alt="颌骨重建智能张口器" />
     </div>
-    <div style="flex: 2; padding-left: 30px; min-width: 300px;">
-      <h2 style="color: #34495e;">颌骨重建智能张口器</h2>
-      <p style="font-size: 18px; line-height: 1.8;">
+    <div class="research-text">
+      <h2>颌骨重建智能张口器</h2>
+      <p>
         本项目旨在开发一款用于下颌骨重建术前训练与术中协助定位的智能张口器，具有张口范围可调、感知反馈、蓝牙控制等特点，现已完成初代产品开发并进入临床测试阶段。
       </p>
     </div>
   </div>
 
-  <!-- 成果2：颌骨重建手术机器人 -->
-  <div style="display: flex; flex-wrap: wrap; margin-bottom: 50px;">
-    <div style="flex: 1; min-width: 300px;">
-      <img src="/images/robot1.jpg" alt="颌骨重建手术机器人" style="width: 100%; border-radius: 10px;" />
+  <!-- 成果2 -->
+  <div class="research-card">
+    <div class="research-image">
+      <img src="/images/robot1.jpg" alt="颌骨重建手术机器人" />
     </div>
-    <div style="flex: 2; padding-left: 30px; min-width: 300px;">
-      <h2 style="color: #34495e;">颌骨重建手术机器人</h2>
-      <p style="font-size: 18px; line-height: 1.8;">
+    <div class="research-text">
+      <h2>颌骨重建手术机器人</h2>
+      <p>
         本研究致力于开发一套用于颌骨精确截骨与重建的手术机器人系统，具备图像导航、力觉反馈和高精度控制等功能，目标是提高手术安全性与重建准确性。
       </p>
     </div>
   </div>
 
-  <!-- 成果3：呼出气检测 -->
-  <div style="display: flex; flex-wrap: wrap; margin-bottom: 50px;">
-    <div style="flex: 1; min-width: 300px;">
-      <img src="/images/breath.jpg" alt="呼出气检测" style="width: 100%; border-radius: 10px;" />
+  <!-- 成果3 -->
+  <div class="research-card">
+    <div class="research-image">
+      <img src="/images/breath.jpg" alt="呼出气检测" />
     </div>
-    <div style="flex: 2; padding-left: 30px; min-width: 300px;">
-      <h2 style="color: #34495e;">呼出气检测</h2>
-      <p style="font-size: 18px; line-height: 1.8;">
+    <div class="research-text">
+      <h2>呼出气检测</h2>
+      <p>
         项目开发了一种基于MEMS传感器的呼出气检测设备，可实时监测呼吸气体中的关键成分，用于术后康复监测及早期疾病筛查，具有便携、无创、响应快等特点。
       </p>
     </div>
   </div>
-</div>
 
+</div>
