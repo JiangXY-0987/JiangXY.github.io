@@ -14,8 +14,8 @@ author_profile: false
   <div class="publication-category" style="margin-top: 40px;">
     <h2 style="color: #2980b9; border-bottom: 2px solid #3498db; padding-bottom: 5px;">已发表论文</h2>
     <div class="publication-list" style="display: flex; flex-direction: column; gap: 20px;">
-      {% for post in site.publications reversed %}
-        {% if post.category == "paper" %}
+      {% for publications in site.publications reversed %}
+        {% if publications.category == "paper" %}
           {% include archive-single.html %}
         {% endif %}
       {% endfor %}
@@ -26,8 +26,8 @@ author_profile: false
   <div class="publication-category" style="margin-top: 40px;">
     <h2 style="color: #27ae60; border-bottom: 2px solid #2ecc71; padding-bottom: 5px;">已授权专利</h2>
     <div class="publication-list" style="display: flex; flex-direction: column; gap: 20px;">
-      {% for post in site.publications reversed %}
-        {% if post.category == "patent" %}
+      {% for publications in site.publications reversed %}
+        {% if publications.category == "patent" %}
           {% include archive-single.html %}
         {% endif %}
       {% endfor %}
@@ -38,8 +38,8 @@ author_profile: false
   <div class="publication-category" style="margin-top: 40px;">
     <h2 style="color: #e67e22; border-bottom: 2px solid #e67e22; padding-bottom: 5px;">获奖情况</h2>
     <div class="publication-list" style="display: flex; flex-direction: column; gap: 20px;">
-      {% for post in site.publications reversed %}
-        {% if post.category == "award" %}
+      {% for publications in site.publications reversed %}
+        {% if publications.category == "award" %}
           {% include archive-single.html %}
         {% endif %}
       {% endfor %}
