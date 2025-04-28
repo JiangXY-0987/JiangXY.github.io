@@ -5,8 +5,86 @@ permalink: /teaching/
 author_profile: true
 ---
 
-{% include base_path %}
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>研究成果</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+  <style>
+    body {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background: #ffffff;
+    }
+
+    h1 {
+      font-size: 45px;
+      color: #2c3e50;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #e67e22;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 8px;
+      margin-bottom: 30px;
+    }
+
+    .achievement-list {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .achievement-item {
+      background: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .achievement-item:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>研究成果</h1>
+
+    <!-- 成果分类 -->
+    <div class="achievement-category">
+      <h2>核心成果</h2>
+      <div class="achievement-list">
+        {% for post in site.posts %}
+          {% if post.category == "research" %}
+            <div class="achievement-item">
+              {% include archive-singleResearch.html %}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <!-- 页脚 -->
+  {% include footer.html %}
+
+</body>
+</html>
+
