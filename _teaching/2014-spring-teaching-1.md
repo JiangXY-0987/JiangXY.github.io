@@ -1,20 +1,6 @@
 ---
-title: "Teaching experience 1"
-collection: teaching
-type: "Undergraduate course"
-permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
-date: 2014-01-01
-location: "City, Country"
+title: "颌骨重建智能张口器"
+category: "research"
+img_path: "https://jiangxy-0987.github.io/JiangXY.github.io/images/zkq.png"
+description: 本项目旨在开发一款张口训练系统
 ---
-
-This is a description of a teaching experience. You can use markdown like any other post.
-
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
