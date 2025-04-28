@@ -1,9 +1,8 @@
 ---
-title: "A Study on Surgical Robotics"
+title: "用于颌骨重建手术的机器人定位系统"
 collection: publications
-permalink: /publication/robotics2024
-authors: Liu J., Wang H., Zhang X.
-year: 2024
-journal: IEEE Trans. on Medical Robotics
-pdf: /files/publications/robotics2024.pdf
+category: "专利"
+year: 2023
+authors: "Wang X, Li Y"
+patent_number: "CN202310123456.7"
 ---
