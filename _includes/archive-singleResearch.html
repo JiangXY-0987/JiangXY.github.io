@@ -1,9 +1,18 @@
-<div style="display: flex; flex-wrap: wrap; margin-bottom: 50px; align-items: flex-start; gap: 20px;">
-  <div style="flex: 1; min-width: 300px; max-width: 100%;">
-    <img src="{{ teaching.img_path }}" alt="{{ teaching.title }}" style="width: 100%; height: auto; border-radius: 10px; object-fit: contain;" />
+<div style="display: flex; flex-wrap: wrap; margin-bottom: 50px;">
+  <div style="flex: 1; min-width: 300px;">
+    <!-- 如果有视频路径，则使用视频播放 -->
+    {% if teaching.video_path %}
+      <video width="100%" autoplay loop muted>
+        <source src="{{ teaching.video_path }}" type="video/mp4">
+        您的浏览器不支持视频播放。
+      </video>
+    {% else %}
+      <!-- 如果没有视频路径，使用图片显示 -->
+      <img src="{{ teaching.img_path }}" alt="{{ teaching.title }}" style="width: 100%; border-radius: 10px;" />
+    {% endif %}
   </div>
   <div style="flex: 2; padding-left: 30px; min-width: 300px;">
-    <h2 style="color: #34495e; font-size: 28px; margin-bottom: 15px;">{{ teaching.title }}</h2>
-    <p style="font-size: 18px; line-height: 1.8; color: #555;">{{ teaching.description }}</p>
+    <h2 style="color: #34495e;">{{ teaching.title }}</h2>
+    <p style="font-size: 18px; line-height: 1.8;">{{ teaching.description }}</p>
   </div>
 </div>
