@@ -1,9 +1,9 @@
-<div style="display: flex; flex-wrap: wrap; margin-bottom: 50px;">
-  <div style="flex: 1; min-width: 300px;">
-    <img src="{{ teaching.img_path }}" alt="{{ teaching.title }}" style="width: 100%; border-radius: 10px;" />
+<div style="display: flex; flex-wrap: wrap; margin-bottom: 50px; align-items: flex-start; gap: 20px;">
+  <div style="flex: 1; min-width: 300px; max-width: 100%;">
+    <img src="{{ teaching.img_path }}" alt="{{ teaching.title }}" style="width: 100%; height: auto; border-radius: 10px; object-fit: contain;" />
   </div>
   <div style="flex: 2; padding-left: 30px; min-width: 300px;">
-    <h2 style="color: #34495e;">{{ teaching.title }}</h2>
-    <p style="font-size: 18px; line-height: 1.8;">{{ teaching.description }}</p>
+    <h2 style="color: #34495e; font-size: 28px; margin-bottom: 15px;">{{ teaching.title }}</h2>
+    <p style="font-size: 18px; line-height: 1.8; color: #555;">{{ teaching.description }}</p>
   </div>
 </div>
