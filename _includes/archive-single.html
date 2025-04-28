@@ -1,24 +1,24 @@
 <div style="margin-bottom: 20px; font-size: 18px; line-height: 1.6;">
-  {% if post.category == "论文" %}
+  {% if publications.category == "论文" %}
     <div>
-      {{ post.authors }}. 
-      <strong>{{ post.title }}</strong>. 
-      <em>{{ post.journal }}</em>, 
-      {{ post.year }}.
+      {{ publications.authors }}. 
+      <strong>{{ publications.title }}</strong>. 
+      <em>{{ publications.journal }}</em>, 
+      {{ publications.year }}.
     </div>
-  {% elsif post.category == "专利" %}
+  {% elsif publications.category == "专利" %}
     <div>
-      [专利] {{ post.authors }}. 
-      <strong>{{ post.title }}</strong>. 
-      专利号: {{ post.patent_number }}, 
-      授权年份: {{ post.year }}.
+      [专利] {{ publications.authors }}. 
+      <strong>{{ publications.title }}</strong>. 
+      专利号: {{ publications.patent_number }}, 
+      授权年份: {{ publications.year }}.
     </div>
-  {% elsif post.category == "获奖" %}
+  {% elsif publications.category == "获奖" %}
     <div>
-      [获奖] {{ post.authors }}. 
-      <strong>{{ post.title }}</strong>. 
-      获奖信息: {{ post.award_info }}, 
-      年份: {{ post.year }}.
+      [获奖] {{ publications.authors }}. 
+      <strong>{{ publications.title }}</strong>. 
+      获奖信息: {{ publications.award_info }}, 
+      年份: {{ publications.year }}.
     </div>
   {% endif %}
 </div>
