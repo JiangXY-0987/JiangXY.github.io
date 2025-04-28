@@ -5,86 +5,54 @@ permalink: /teaching/
 author_profile: false
 ---
 
-<!DOCTYPE html>
-<html lang="zh">
-<head>
-  <meta charset="UTF-8">
-  <title>研究成果</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  .custom-container {
+    max-width: 70%; /* 这里设置内容宽度占屏幕70% */
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: #ffffff;
+  }
 
-  <style>
-    body {
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      background-color: #f8f9fa;
-      margin: 0;
-      padding: 0;
-    }
+  .custom-title {
+    font-size: 40px;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    text-align: left; /* 左对齐 */
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+  }
 
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 40px 20px;
-      background: #ffffff;
-    }
+  .achievement-list {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 
-    h1 {
-      font-size: 45px;
-      color: #2c3e50;
-      margin-bottom: 50px;
-      text-align: center;
-    }
+  .achievement-item {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
 
-    h2 {
-      color: #e67e22;
-      border-bottom: 2px solid #3498db;
-      padding-bottom: 8px;
-      margin-bottom: 30px;
-    }
+  .achievement-item:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+</style>
 
-    .achievement-list {
-      margin-top: 30px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
+<div class="custom-container">
+  <h1 class="custom-title">研究成果</h1>
 
-    .achievement-item {
-      background: #ffffff;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      transition: box-shadow 0.3s ease;
-    }
-
-    .achievement-item:hover {
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    }
-  </style>
-</head>
-<body>
-
-  <div class="container">
-    <h1>研究成果</h1>
-
-    <!-- 成果分类 -->
-    <div class="achievement-category">
-      <h2>核心成果</h2>
-      <div class="achievement-list">
-        {% for teaching in site.teaching %}
-          {% if teaching.category == "research" %}
-            <div class="achievement-item">
-              {% include archive-singleResearch.html %}
-            </div>
-          {% endif %}
-        {% endfor %}
-      </div>
-    </div>
+  <div class="achievement-list">
+    {% for teaching in site.teaching %}
+      {% if teaching.category == "research" %}
+        <div class="achievement-item">
+          {% include archive-singleResearch.html %}
+        </div>
+      {% endif %}
+    {% endfor %}
   </div>
-
-  <!-- 页脚 -->
-  {% include footer.html %}
-
-</body>
-</html>
-
+</div>
