@@ -71,8 +71,8 @@ author_profile: false
     <div class="achievement-category">
       <h2>核心成果</h2>
       <div class="achievement-list">
-        {% for post in site.posts %}
-          {% if post.category == "research" %}
+        {% for teaching in site.teaching %}
+          {% if teaching.category == "research" %}
             <div class="achievement-item">
               {% include archive-singleResearch.html %}
             </div>
