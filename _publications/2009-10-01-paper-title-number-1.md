@@ -1,9 +1,8 @@
 ---
-title: "A Study on Surgical Robotics"
+title: "A Novel Robotic System for Mandibular Reconstruction"
 collection: publications
-permalink: /publication/robotics2024
-authors: Liu J., Wang H., Zhang X.
+category: "论文"
 year: 2024
-journal: IEEE Trans. on Medical Robotics
-pdf: /files/publications/robotics2024.pdf
+authors: "Wang X, Li Y, Zhang Z"
+journal: "IEEE Transactions on Medical Robotics"
 ---
