@@ -1,16 +1,24 @@
-<div class="pub-item" style="margin: 25px 0; padding-bottom: 20px; border-bottom: 1px solid #ddd; display: flex; align-items: flex-start;">
-  <div style="width: 20px; text-align: center; font-size: 22px; color: #3498db;">•</div>
-  <div style="flex-grow: 1; line-height: 1.8; color: #000; font-size: 17px;">
-    <span>
-      {{ post.authors }}.
-      {% if post.doi %}
-        <strong><a href="{{ post.doi }}" target="_blank" style="color: #000; text-decoration: none;">{{ post.title }}</a></strong>.
-      {% elsif post.pdf %}
-        <strong><a href="{{ post.pdf }}" target="_blank" style="color: #000; text-decoration: none;">{{ post.title }}</a></strong>.
-      {% else %}
-        <strong>{{ post.title }}</strong>.
-      {% endif %}
-      <em>{{ post.journal }}</em>, {{ post.year }}.
-    </span>
-  </div>
+<div style="margin-bottom: 20px; font-size: 18px; line-height: 1.6;">
+  {% if post.category == "论文" %}
+    <div>
+      {{ post.authors }}. 
+      <strong>{{ post.title }}</strong>. 
+      <em>{{ post.journal }}</em>, 
+      {{ post.year }}.
+    </div>
+  {% elsif post.category == "专利" %}
+    <div>
+      [专利] {{ post.authors }}. 
+      <strong>{{ post.title }}</strong>. 
+      专利号: {{ post.patent_number }}, 
+      授权年份: {{ post.year }}.
+    </div>
+  {% elsif post.category == "获奖" %}
+    <div>
+      [获奖] {{ post.authors }}. 
+      <strong>{{ post.title }}</strong>. 
+      获奖信息: {{ post.award_info }}, 
+      年份: {{ post.year }}.
+    </div>
+  {% endif %}
 </div>
