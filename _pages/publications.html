@@ -1,37 +1,49 @@
 ---
-layout: archive
-title: "已发表论文"
+layout: default
+title: "成果展示"
 permalink: /publications/
 author_profile: false
 ---
 
-<div style="max-width: 900px; margin: 0 auto; padding: 20px;">
-  {% if site.author.googlescholar %}
-    <div class="wordwrap">
-      You can also find my articles on
-      <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.
-    </div>
-  {% endif %}
+<div class="container" style="max-width: 1200px; margin: 0 auto; padding: 20px;">
+  <h1 style="font-size: 36px; color: #333;">成果展示</h1>
 
   {% include base_path %}
 
-  {% if site.publication_category %}
-    {% for category in site.publication_category  %}
-      {% assign title_shown = false %}
+  <!-- 已发表论文 -->
+  <div class="publication-category" style="margin-top: 40px;">
+    <h2 style="color: #2980b9; border-bottom: 2px solid #3498db; padding-bottom: 5px;">已发表论文</h2>
+    <div class="publication-list" style="display: flex; flex-direction: column; gap: 20px;">
       {% for post in site.publications reversed %}
-        {% if post.category != category[0] %}
-          {% continue %}
+        {% if post.category == "paper" %}
+          {% include archive-single.html %}
         {% endif %}
-        {% unless title_shown %}
-          <h2 style="color: #2980b9; border-bottom: 2px solid #3498db; padding-bottom: 5px;">{{ category[1].title }}</h2>
-          {% assign title_shown = true %}
-        {% endunless %}
-        {% include archive-single.html %}
       {% endfor %}
-    {% endfor %}
-  {% else %}
-    {% for post in site.publications reversed %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endif %}
+    </div>
+  </div>
+
+  <!-- 已授权专利 -->
+  <div class="publication-category" style="margin-top: 40px;">
+    <h2 style="color: #27ae60; border-bottom: 2px solid #2ecc71; padding-bottom: 5px;">已授权专利</h2>
+    <div class="publication-list" style="display: flex; flex-direction: column; gap: 20px;">
+      {% for post in site.publications reversed %}
+        {% if post.category == "patent" %}
+          {% include archive-single.html %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- 获奖情况 -->
+  <div class="publication-category" style="margin-top: 40px;">
+    <h2 style="color: #e67e22; border-bottom: 2px solid #e67e22; padding-bottom: 5px;">获奖情况</h2>
+    <div class="publication-list" style="display: flex; flex-direction: column; gap: 20px;">
+      {% for post in site.publications reversed %}
+        {% if post.category == "award" %}
+          {% include archive-single.html %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
 </div>
