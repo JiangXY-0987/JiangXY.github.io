@@ -1,58 +1,53 @@
 ---
-layout: archive
+layout: default
 title: "研究成果"
 permalink: /teaching/
 author_profile: false
 ---
 
-<style>
-  .custom-container {
-    max-width: 70%; /* 这里设置内容宽度占屏幕70% */
-    margin: 0 auto;
-    padding: 40px 20px;
-    background: #ffffff;
-  }
+<div class="container" style="max-width: 1200px; margin: 0 auto; padding: 40px 20px;">
 
-  .custom-title {
-    font-size: 40px;
-    color: #2c3e50;
-    margin-bottom: 40px;
-    text-align: left; /* 左对齐 */
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 10px;
-  }
+  <!-- 页面标题 -->
+  <h1 style="font-size: 40px; color: #2c3e50; margin-bottom: 40px; font-weight: bold;">研究成果</h1>
 
-  .achievement-list {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
+  <!-- 成果分类 -->
+  <div class="achievement-category">
+    <h2 style="font-size: 28px; color: #e67e22; border-bottom: 2px solid #3498db; padding-bottom: 8px; margin-bottom: 30px;">核心成果</h2>
+    
+    <div class="achievement-list" style="display: flex; flex-direction: column; gap: 24px;">
+      {% for teaching in site.teaching %}
+        {% if teaching.category == "research" %}
+          <div class="achievement-item" style="background: #ffffff; border: 1px solid #e0e0e0; border-radius: 12px; padding: 24px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); transition: all 0.3s ease;">
+            {% include archive-singleResearch.html %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
 
-  .achievement-item {
-    background: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
-  }
-
-  .achievement-item:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  }
-</style>
-
-<div class="custom-container">
-  <h1 class="custom-title">核心成果</h1>
-
-  <div class="achievement-list">
-    {% for teaching in site.teaching %}
-      {% if teaching.category == "research" %}
-        <div class="achievement-item">
-          {% include archive-singleResearch.html %}
-        </div>
-      {% endif %}
-    {% endfor %}
   </div>
+
 </div>
+
+<!-- 额外增加：小的响应式优化 -->
+<style>
+@media (max-width: 768px) {
+  .container {
+    padding: 20px 15px;
+  }
+  h1 {
+    font-size: 32px !important;
+  }
+  h2 {
+    font-size: 24px !important;
+  }
+  .achievement-item {
+    padding: 20px !important;
+  }
+}
+
+/* 鼠标悬停时效果更细腻 */
+.achievement-item:hover {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15) !important;
+  transform: translateY(-3px);
+}
+</style>
