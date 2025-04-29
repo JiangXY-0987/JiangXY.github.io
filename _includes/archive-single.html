@@ -1,19 +1,19 @@
 <div style="margin-bottom: 20px; font-size: 18px; line-height: 1.6;">
-  {% if publication.category == "论文" %}
+  {% if publication.category == "paper" %}
     <div>
-      {{ publications.authors }}. 
+      {{ publication.authors }}. 
       <strong>{{ publication.title }}</strong>. 
       <em>{{ publication.journal }}</em>, 
       {{ publication.year }}.
     </div>
-  {% elsif publication.category == "专利" %}
+  {% elsif publication.category == "patent" %}
     <div>
       [专利] {{ publication.authors }}. 
       <strong>{{ publication.title }}</strong>. 
       专利号: {{ publication.patent_number }}, 
       授权年份: {{ publication.year }}.
     </div>
-  {% elsif publication.category == "获奖" %}
+  {% elsif publication.category == "award" %}
     <div>
       [获奖] {{ publication.authors }}. 
       <strong>{{ publication.title }}</strong>. 
@@ -22,3 +22,4 @@
     </div>
   {% endif %}
 </div>
+
