@@ -1,6 +1,6 @@
 <div style="margin-bottom: 20px; font-size: 18px; line-height: 1.6;">
   <div>
-    <span style="font-weight: bold;">[{{ forloop.index }}]</span>
+    <span style="font-weight: bold;">[{{ include.index }}]</span>
     {% if publication.category == "paper" %}
       {{ publication.authors }}. 
       <strong>{{ publication.title }}</strong>. 
