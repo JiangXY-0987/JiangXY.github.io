@@ -1,25 +1,21 @@
 <div style="margin-bottom: 20px; font-size: 18px; line-height: 1.6;">
-  {% if publication.category == "paper" %}
-    <div>
+  <div>
+    <span style="font-weight: bold;">[{{ forloop.index }}]</span>
+    {% if publication.category == "paper" %}
       {{ publication.authors }}. 
       <strong>{{ publication.title }}</strong>. 
       <em>{{ publication.journal }}</em>, 
       {{ publication.year }}.
-    </div>
-  {% elsif publication.category == "patent" %}
-    <div>
+    {% elsif publication.category == "patent" %}
       [专利] {{ publication.authors }}. 
       <strong>{{ publication.title }}</strong>. 
       专利号: {{ publication.patent_number }}, 
       授权年份: {{ publication.year }}.
-    </div>
-  {% elsif publication.category == "award" %}
-    <div>
+    {% elsif publication.category == "award" %}
       [获奖] {{ publication.authors }}. 
       <strong>{{ publication.title }}</strong>. 
       获奖信息: {{ publication.award_info }}, 
       年份: {{ publication.year }}.
-    </div>
-  {% endif %}
+    {% endif %}
+  </div>
 </div>
-
