@@ -1,8 +1,8 @@
 ---
-title: "用于颌骨重建手术的机器人定位系统"
+title: "一种人参碳点及其制备方法和用途"
 collection: publications
 category: "patent"
 year: 2023
-authors: "Wang X, Li Y"
-patent_number: "CN202310123456.7"
+authors: "刘剑楠；王梓霖；吴昊；郭陟永；刘一戈；韩婧；张陈平"
+patent_number: "CN202210673458.8"
 ---
