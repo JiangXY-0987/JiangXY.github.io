@@ -14,6 +14,18 @@
     {% elsif publication.category == "award" %}
       <strong>{{ publication.title }}</strong>. 
       年份: {{ publication.year }}.
+
+     {% elsif publication.category == "project" %}
+      <strong>{{ publication.title }}</strong>（项目编号: {{ publication.project_id }}）. 
+      {{ publication.role }}. 
+      金额: {{ publication.fund }}元, 
+      年份: {{ publication.year }}.
+
+    {% elsif publication.category == "teaching" %}
+      <strong>{{ publication.title }}</strong>. 
+      {{ publication.grade }}年级课程, 
+      学分: {{ publication.credit }}.
+    
     {% endif %}
   </div>
 </div>
