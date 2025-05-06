@@ -30,7 +30,7 @@ author_profile: false
     <div class="publication-list" style="display: flex; flex-direction: column; gap: 20px;">
    {% assign patent_index = 0 %}
 {% for publication in site.publications reversed %}
-  {% if publication.category == "course" %}
+  {% if publication.category == "teaching" %}
     {% assign patent_index = patent_index | plus: 1 %}
     {% include archive-single.html publication=publication index=patent_index %}
   {% endif %}
