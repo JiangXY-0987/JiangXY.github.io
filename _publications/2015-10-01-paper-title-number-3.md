@@ -4,5 +4,4 @@ collection: publications
 category: "award"
 year: 2023
 authors: "Wang X, Li Y"
-award_info: "全国大学生创新创业大赛优秀奖"
 ---
