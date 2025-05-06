@@ -4,5 +4,5 @@ collection: publications
 category: "paper"
 year: 2024
 authors: "Ji, Kaiyuan & Han, Jing & Zhai, Guangtao & Liu, Jiannan"
-journal: "Frontiers in Oral Health"
+journal: "International dental journal"
 ---
