@@ -7,12 +7,12 @@
       <em>{{ publication.journal }}</em>, 
       {{ publication.year }}.
     {% elsif publication.category == "patent" %}
-      [专利] {{ publication.authors }}. 
+       {{ publication.authors }}. 
       <strong>{{ publication.title }}</strong>. 
       专利号: {{ publication.patent_number }}, 
       授权年份: {{ publication.year }}.
     {% elsif publication.category == "award" %}
-      [获奖] {{ publication.authors }}. 
+       {{ publication.authors }}. 
       <strong>{{ publication.title }}</strong>. 
       获奖信息: {{ publication.award_info }}, 
       年份: {{ publication.year }}.
