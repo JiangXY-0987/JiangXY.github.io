@@ -191,6 +191,9 @@ collections:
   states:
     output: true
     permalink: /:collection/:path/
+     research:
+    output: true
+    permalink: /:collection/:path/
 
 
 # Defaults
@@ -241,6 +244,15 @@ defaults:
   - scope:
       path: ""
       type: states
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+    # _research
+  - scope:
+      path: ""
+      type: research
     values:
       layout: single
       author_profile: true
