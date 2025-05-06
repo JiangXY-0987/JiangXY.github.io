@@ -13,7 +13,7 @@ main:
     url: /research/
         
   - title: "团队动态"
-    url: /state/
+    url: /states/
     
   - title: "联系方式"
     url: /portfolio/
