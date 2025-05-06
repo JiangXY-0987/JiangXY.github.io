@@ -12,9 +12,7 @@
       专利号: {{ publication.patent_number }}, 
       授权年份: {{ publication.year }}.
     {% elsif publication.category == "award" %}
-       {{ publication.authors }}. 
       <strong>{{ publication.title }}</strong>. 
-       {{ publication.award_info }}, 
       年份: {{ publication.year }}.
     {% endif %}
   </div>
