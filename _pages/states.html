@@ -5,26 +5,21 @@ permalink: /states/
 author_profile: false
 ---
 
-<div class="container" style="max-width: 1200px; margin: 0 auto; padding: 20px;">
-  <h1 style="font-size: 36px; color: #333;">团队团建照片</h1>
+<div class="container" style="max-width: 1200px; margin: 0 auto; padding: 40px 20px;">
+  <h1 style="text-align: center; font-size: 36px; color: #2c3e50; margin-bottom: 40px;">团队团建照片</h1>
 
-  {% include base_path %}
-
-  <!-- 相册展示 -->
-  <div class="photo-gallery" style="display: flex; flex-direction: column; gap: 40px; margin-top: 40px;">
-    
-    <!-- 第一组照片 -->
-    <div>
-      <h2 style="color: #2c3e50;">团建活动 - 2024年春季</h2>
-      <img src="{{ '/assets/images/team-building-2024.jpg' | relative_url }}" alt="团队合影" style="width: 100%; max-width: 800px; border-radius: 10px; margin-top: 10px;">
-    </div>
-
-    <!-- 第二组照片 -->
-    <div>
-      <h2 style="color: #2c3e50;">实验室日常</h2>
-      <img src="{{ '/assets/images/lab-daily.jpg' | relative_url }}" alt="实验室日常" style="width: 100%; max-width: 800px; border-radius: 10px; margin-top: 10px;">
-    </div>
-
-    <!-- 你可以继续添加更多相册项 -->
+  <div class="photo-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px;">
+    {% assign photos = site.static_files | where_exp:"item", "item.path contains 'assets/images/states'" %}
+    {% for photo in photos %}
+      <div class="photo-item" style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s;">
+        <img src="{{ photo.path }}" alt="Team Photo" style="width: 100%; height: auto; display: block; transition: transform 0.3s;">
+      </div>
+    {% endfor %}
   </div>
 </div>
+
+<style>
+.photo-item:hover img {
+  transform: scale(1.05);
+}
+</style>
