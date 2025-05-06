@@ -1,57 +1,30 @@
 ---
 layout: default
 title: "团队团建照片"
-permalink: /publications/
+permalink: /states/
 author_profile: false
 ---
 
 <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 20px;">
-  <h1 style="font-size: 36px; color: #333;">成果展示</h1>
+  <h1 style="font-size: 36px; color: #333;">团队团建照片</h1>
 
   {% include base_path %}
 
-  <!-- 已发表论文 -->
-  <div class="publication-category" style="margin-top: 40px;">
-    <h2 style="color: #2980b9; border-bottom: 2px solid #3498db; padding-bottom: 5px;">已发表论文</h2>
-    <div class="publication-list" style="display: flex; flex-direction: column; gap: 20px;">
-{% assign paper_index = 0 %}
-{% for publication in site.publications reversed %}
-  {% if publication.category == "paper" %}
-    {% assign paper_index = paper_index | plus: 1 %}
-    {% include archive-single.html publication=publication index=paper_index %}
-  {% endif %}
-{% endfor %}
+  <!-- 相册展示 -->
+  <div class="photo-gallery" style="display: flex; flex-direction: column; gap: 40px; margin-top: 40px;">
+    
+    <!-- 第一组照片 -->
+    <div>
+      <h2 style="color: #2c3e50;">团建活动 - 2024年春季</h2>
+      <img src="{{ '/assets/images/team-building-2024.jpg' | relative_url }}" alt="团队合影" style="width: 100%; max-width: 800px; border-radius: 10px; margin-top: 10px;">
     </div>
-  </div>
 
-  <!-- 已授权专利 -->
-  <div class="publication-category" style="margin-top: 40px;">
-    <h2 style="color: #27ae60; border-bottom: 2px solid #2ecc71; padding-bottom: 5px;">已授权专利</h2>
-    <div class="publication-list" style="display: flex; flex-direction: column; gap: 20px;">
-   {% assign patent_index = 0 %}
-{% for publication in site.publications reversed %}
-  {% if publication.category == "patent" %}
-    {% assign patent_index = patent_index | plus: 1 %}
-    {% include archive-single.html publication=publication index=patent_index %}
-  {% endif %}
-{% endfor %}
-
+    <!-- 第二组照片 -->
+    <div>
+      <h2 style="color: #2c3e50;">实验室日常</h2>
+      <img src="{{ '/assets/images/lab-daily.jpg' | relative_url }}" alt="实验室日常" style="width: 100%; max-width: 800px; border-radius: 10px; margin-top: 10px;">
     </div>
+
+    <!-- 你可以继续添加更多相册项 -->
   </div>
-
-  <!-- 获奖情况 -->
-  <div class="publication-category" style="margin-top: 40px;">
-    <h2 style="color: #e67e22; border-bottom: 2px solid #e67e22; padding-bottom: 5px;">获奖情况</h2>
-    <div class="publication-list" style="display: flex; flex-direction: column; gap: 20px;">
- {% assign award_index = 0 %}
-{% for publication in site.publications reversed %}
-  {% if publication.category == "award" %}
-    {% assign award_index = award_index | plus: 1 %}
-    {% include archive-single.html publication=publication index=award_index %}
-  {% endif %}
-{% endfor %}
-
-    </div>
-  </div>
-
 </div>
