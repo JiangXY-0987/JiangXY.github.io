@@ -1,8 +1,8 @@
 ---
-title: "A Novel Robotic System for Mandibular Reconstruction"
+title: "Radiologist-in-the-Loop Self-Training for Generalizable CT Metal Artifact Reduction"
 collection: publications
 category: "paper"
-year: 2024
-authors: "Wang X, Li Y, Zhang Z"
-journal: "IEEE Transactions on Medical Robotics"
+year: 2025
+authors: "Ma Chenglong & Li Zilong & Li Yuanlin & Han Jing & Zhang Junping & Zhang Yi & Liu Jiannan & Shan Hongming"
+journal: "IEEE Transactions on Medical Imaging"
 ---
