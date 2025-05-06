@@ -1,6 +1,6 @@
 ---
-title: "颌骨手术机器人项目荣获优秀奖"
+title: "国家科技进步二等奖（第九）"
 collection: publications
 category: "award"
-year: 2023
+year: 2019
 ---
