@@ -5,21 +5,38 @@ permalink: /states/
 author_profile: false
 ---
 
-<div class="container" style="max-width: 1200px; margin: 0 auto; padding: 40px 20px;">
+<div style="max-width: 1200px; margin: 0 auto; padding: 40px 20px; font-family: sans-serif;">
   <h1 style="text-align: center; font-size: 36px; color: #2c3e50; margin-bottom: 40px;">团队团建照片</h1>
 
-  <div class="photo-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px;">
-    {% assign photos = site.static_files | where_exp:"item", "item.path contains 'assets/images/states'" %}
-    {% for photo in photos %}
-      <div class="photo-item" style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s;">
-        <img src="{{ photo.path }}" alt="Team Photo" style="width: 100%; height: auto; display: block; transition: transform 0.3s;">
+  <!-- 网格容器 -->
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+
+    <!-- 图文卡片 -->
+    <div style="box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-radius: 12px; overflow: hidden; background-color: #fff; transition: transform 0.3s;">
+      <img src="/assets/images/states/photo1.jpg" alt="春游活动" style="width: 100%; display: block;">
+      <div style="padding: 15px;">
+        <h3 style="margin: 0; color: #2c3e50;">2024年春游活动</h3>
+        <p style="color: #7f8c8d; font-size: 14px;">阳光明媚，团建踏青好时光。</p>
       </div>
-    {% endfor %}
+    </div>
+
+    <div style="box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-radius: 12px; overflow: hidden; background-color: #fff; transition: transform 0.3s;">
+      <img src="/assets/images/states/photo2.jpg" alt="聚餐" style="width: 100%; display: block;">
+      <div style="padding: 15px;">
+        <h3 style="margin: 0; color: #2c3e50;">实验室聚餐留影</h3>
+        <p style="color: #7f8c8d; font-size: 14px;">每一餐，都是记忆。</p>
+      </div>
+    </div>
+
+    <div style="box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-radius: 12px; overflow: hidden; background-color: #fff; transition: transform 0.3s;">
+      <img src="/assets/images/states/photo3.jpg" alt="拓展训练" style="width: 100%; display: block;">
+      <div style="padding: 15px;">
+        <h3 style="margin: 0; color: #2c3e50;">拓展训练现场</h3>
+        <p style="color: #7f8c8d; font-size: 14px;">一起流汗，一起成长。</p>
+      </div>
+    </div>
+
+    <!-- 可以继续添加更多卡片 -->
+    
   </div>
 </div>
-
-<style>
-.photo-item:hover img {
-  transform: scale(1.05);
-}
-</style>
