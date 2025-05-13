@@ -16,10 +16,11 @@
       年份: {{ publication.year }}.
 
      {% elsif publication.category == "project" %}
-      <strong>{{ publication.title }}</strong>（项目编号: {{ publication.project_id }}）. 
-      {{ publication.role }}. 
-      金额: {{ publication.fund }}元, 
-      年份: {{ publication.year }}.
+      <strong>{{ publication.title }}</strong>（{{ publication.project_id }}）. 
+    {{ publication.fund }},
+    {{ publication.year }},
+    {{ publication.role }}.
+    
 
     {% elsif publication.category == "teaching" %}
       <strong>{{ publication.title }}</strong>. 
