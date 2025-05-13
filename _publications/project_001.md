@@ -1,8 +1,8 @@
 ---
-title: 医疗机器人研发项目
+title: 国家自然科学基金优秀青年基金，口腔肿瘤智能诊疗
 category: project
 project_id: 2023YX123
-role: 项目负责人
-fund: 500000
-year: 2023
+role: 主持
+fund: 200万
+year: 2024-2026
 ---
