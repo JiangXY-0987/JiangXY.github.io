@@ -191,7 +191,7 @@ collections:
   states:
     output: true
     permalink: /:collection/:path/
-     research:
+  research:
     output: true
     permalink: /:collection/:path/
 
