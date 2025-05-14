@@ -13,7 +13,7 @@ author_profile: false
   <!-- 已发表论文 -->
   <div class="publication-category" style="margin-top: 40px;">
     <h2 style="color: #2980b9; border-bottom: 2px solid #3498db; padding-bottom: 5px;">科研项目</h2>
-    <div class="publication-list" style="display: flex; flex-direction: column; gap: 8px;">
+    <div class="publication-list" style="display: flex; flex-direction: column; gap: 1px;">
 {% assign paper_index = 0 %}
 {% for publication in site.publications reversed %}
   {% if publication.category == "project" %}
@@ -27,7 +27,7 @@ author_profile: false
   <!-- 已授权专利 -->
   <div class="publication-category" style="margin-top: 40px;">
     <h2 style="color: #27ae60; border-bottom: 2px solid #2ecc71; padding-bottom: 5px;">教学工作</h2>
-    <div class="publication-list" style="display: flex; flex-direction: column; gap: 8px;">
+    <div class="publication-list" style="display: flex; flex-direction: column; gap: 1px;">
    {% assign patent_index = 0 %}
 {% for publication in site.publications reversed %}
   {% if publication.category == "teaching" %}
