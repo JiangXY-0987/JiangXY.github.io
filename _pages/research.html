@@ -14,12 +14,11 @@ author_profile: false
   <div class="publication-category" style="margin-top: 40px;">
     <h2 style="color: #2980b9; border-bottom: 2px solid #3498db; padding-bottom: 5px;">科研项目</h2>
     <div class="publication-list" style="display: flex; flex-direction: column; gap: 1px;">
+{% assign projects = site.publications | where: "category", "project" | sort: "order" %}
 {% assign paper_index = 0 %}
-{% for publication in site.publications reversed %}
-  {% if publication.category == "project" %}
-    {% assign paper_index = paper_index | plus: 1 %}
-    {% include archive-single.html publication=publication index=paper_index %}
-  {% endif %}
+{% for publication in projects %}
+  {% assign paper_index = paper_index | plus: 1 %}
+  {% include archive-single.html publication=publication index=paper_index %}
 {% endfor %}
     </div>
   </div>
