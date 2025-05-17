@@ -26,13 +26,13 @@ author_profile: false
   <div class="publication-category" style="margin-top: 40px;">
     <h2 style="color: #27ae60; border-bottom: 2px solid #2ecc71; padding-bottom: 5px;">已授权专利</h2>
     <div class="publication-list" style="display: flex; flex-direction: column; gap: 0px;">
-   {% assign patent_index = 0 %}
-{% for publication in site.publications reversed %}
-  {% if publication.category == "patent" %}
-    {% assign patent_index = patent_index | plus: 1 %}
-    {% include archive-single.html publication=publication index=patent_index %}
-  {% endif %}
+{% assign patents = site.publications | where: "category", "patent" | sort: "order" %}
+{% assign patent_index = 0 %}
+{% for publication in patents %}
+  {% assign patent_index = patent_index | plus: 1 %}
+  {% include archive-single.html publication=publication index=patent_index %}
 {% endfor %}
+
 
     </div>
   </div>
@@ -41,13 +41,13 @@ author_profile: false
   <div class="publication-category" style="margin-top: 40px;">
     <h2 style="color: #e67e22; border-bottom: 2px solid #e67e22; padding-bottom: 5px;">获奖情况</h2>
     <div class="publication-list" style="display: flex; flex-direction: column; gap: 0px;">
- {% assign award_index = 0 %}
-{% for publication in site.publications reversed %}
-  {% if publication.category == "award" %}
-    {% assign award_index = award_index | plus: 1 %}
-    {% include archive-single.html publication=publication index=award_index %}
-  {% endif %}
+{% assign awards = site.publications | where: "category", "award" | sort: "order" %}
+{% assign award_index = 0 %}
+{% for publication in awards %}
+  {% assign award_index = award_index | plus: 1 %}
+  {% include archive-single.html publication=publication index=award_index %}
 {% endfor %}
+
 
     </div>
   </div>
