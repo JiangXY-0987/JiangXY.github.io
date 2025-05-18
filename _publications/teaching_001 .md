@@ -1,6 +1,6 @@
 ---
-title: 机械设计基础
+title: 口腔局部解剖
 category: teaching
-grade: 二
-credit: 3
+grade: 
+credit: 
 ---
